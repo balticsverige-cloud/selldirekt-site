@@ -245,3 +245,28 @@ p, .lead, .muted {
 .hero .stat svg, .hero .pill svg, .hero .feature svg {
   opacity: 1 !important;
 }
+
+/* Right-side hero notes (fix contrast + hierarchy) */
+.sideNotes {
+  display: grid;
+  gap: 14px;
+}
+
+.sideNotes p {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.78);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sideNotes p strong {
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
