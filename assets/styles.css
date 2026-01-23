@@ -196,3 +196,30 @@ h1{margin:12px 0 10px;font-size:44px;line-height:1.05;letter-spacing:-.5px}
 p, .lead, .muted {
   color: rgba(255,255,255,.78) !important;
 }
+/* =========================
+   HOTFIX: Buttons visibility
+   ========================= */
+
+/* Make sure buttons never look disabled */
+.btn, button, a.btn {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Primary button (Kontakta oss) */
+.btn.primary, a.btn.primary {
+  background: linear-gradient(180deg, rgba(34,197,94,.40), rgba(34,197,94,.18)) !important;
+  border: 1px solid rgba(34,197,94,.55) !important;
+  color: rgba(255,255,255,.95) !important;
+  box-shadow: 0 10px 30px rgba(34,197,94,.15) !important;
+}
+
+/* Hover/focus */
+.btn.primary:hover, a.btn.primary:hover {
+  filter: brightness(1.08) !important;
+}
+.btn:focus-visible, button:focus-visible, a.btn:focus-visible {
+  outline: 2px solid rgba(34,197,94,.55) !important;
+  outline-offset: 3px !important;
+}
