@@ -169,3 +169,30 @@ h1{margin:12px 0 10px;font-size:44px;line-height:1.05;letter-spacing:-.5px}
   .grid3{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
 }
+/* ---- CLARITY OVERRIDES (temporary, safe) ---- */
+
+/* Ensure all card-like blocks inherit readable text */
+.card, .tile, .feature, .stat, .pill, .badge {
+  color: var(--text) !important;
+}
+
+/* Fix the light-grey strips in the hero */
+.hero .stat,
+.hero .pill,
+.hero .feature {
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+}
+
+/* Fix the right-side 3 stacked cards */
+.heroAside .tile,
+.heroAside .card,
+.heroAside .stat {
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(255,255,255,.14) !important;
+}
+
+/* Muted text should still be readable */
+p, .lead, .muted {
+  color: rgba(255,255,255,.78) !important;
+}
