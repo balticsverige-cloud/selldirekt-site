@@ -73,47 +73,120 @@
     @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
-
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">SellDirekt.se</div>
-      <div class="pill">🚀 Under uppbyggnad</div>
+  <div class="bg">
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <a class="brand" href="/">
+          <span class="brandDot"></span>
+          <span class="brandText">SellDirekt.se</span>
+        </a>
+
+        <nav class="menu" aria-label="Primary">
+          <a href="#how">Så funkar det</a>
+          <a href="#trust">Trygghet</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="headerCtas">
+          <a class="btn ghost" href="/test">Test-sida</a>
+          <a class="btn primary" href="mailto:hello@selldirekt.se?subject=Kontakt%20SellDirekt">Kontakta oss</a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <main class="hero">
+        <div class="heroGrid card">
+          <div class="heroCopy">
+            <div class="kicker">🚀 Under uppbyggnad</div>
+            <h1>Sälj direkt. Enkelt, tryggt och snabbt.</h1>
+            <p class="lead">
+              Vi bygger en plattform som gör det enklare att sälja och köpa direkt — utan krångel.
+              Mer information lanseras snart.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="mailto:hello@selldirekt.se?subject=Intresse%20-%20SellDirekt">Kontakta oss</a>
+              <a class="btn ghost" href="#how">Se hur det funkar</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <span class="statLabel">✅ Enkelt</span>
+                <span class="statValue">Smidigt flöde från start till avslut.</span>
+              </div>
+              <div class="stat">
+                <span class="statLabel">🔒 Tryggt</span>
+                <span class="statValue">Fokus på transparens och säkerhet.</span>
+              </div>
+              <div class="stat">
+                <span class="statLabel">⚡ Snabbt</span>
+                <span class="statValue">Kom igång på minuter — inte dagar.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="heroSide">
+            <div class="tile">
+              <div class="tileTitle">Premium, skandinaviskt</div>
+              <div class="tileText">Ljus, modern design med hög läsbarhet och lugna ytor.</div>
+            </div>
+            <div class="tile">
+              <div class="tileTitle">För fastigheter</div>
+              <div class="tileText">Optimerat för tydlighet, förtroende och konvertering.</div>
+            </div>
+            <div class="tile">
+              <div class="tileTitle">Byggt för skalning</div>
+              <div class="tileText">Vi kan lägga till React senare för app-delarna.</div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Sections -->
+        <section id="how" class="section">
+          <h2>Så funkar det</h2>
+          <div class="grid3">
+            <div class="card pad">
+              <h3>1) Lägg upp</h3>
+              <p>Skapa en annons med bilder och tydliga fakta.</p>
+            </div>
+            <div class="card pad">
+              <h3>2) Matcha</h3>
+              <p>Intresserade kan kontakta dig direkt – utan mellanhänder.</p>
+            </div>
+            <div class="card pad">
+              <h3>3) Avsluta</h3>
+              <p>Strukturerad process med fokus på trygghet och transparens.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="trust" class="section">
+          <h2>Trygghet först</h2>
+          <div class="grid2">
+            <div class="card pad">
+              <h3>Transparens</h3>
+              <p>Tydliga steg, tydliga villkor, inga överraskningar.</p>
+            </div>
+            <div class="card pad">
+              <h3>Säkerhet</h3>
+              <p>Skydd mot spam och oseriösa kontakter (kommer i nästa version).</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="section">
+          <h2>FAQ</h2>
+          <div class="card pad">
+            <p><strong>När lanseras tjänsten?</strong><br/>Vi lanserar stegvis. Lämna mail så hör vi av oss.</p>
+            <p style="margin-top:14px;"><strong>Kommer det vara en app?</strong><br/>Ja, senare. Den första versionen är snabb och enkel.</p>
+          </div>
+        </section>
+
+        <footer class="footer">© 2026 SellDirekt.se</footer>
+      </main>
     </div>
-
-    <div class="card">
-      <h1>Sälj direkt. Enkelt, tryggt och snabbt.</h1>
-      <p>
-        Vi bygger en plattform som gör det enklare att sälja och köpa direkt — utan krångel.
-        Mer information lanseras snart.
-      </p>
-
-      <div class="ctaRow">
-        <a class="btn primary" href="mailto:hello@selldirekt.se">Kontakta oss</a>
-        <a class="btn" href="/test">Test-sida</a>
-      </div>
-
-      <div class="grid">
-        <div class="box">
-          <h3>✅ Enkelt</h3>
-          <p>Smidigt flöde från start till avslut.</p>
-        </div>
-        <div class="box">
-          <h3>🔒 Tryggt</h3>
-          <p>Fokus på transparens och säkerhet.</p>
-        </div>
-        <div class="box">
-          <h3>⚡ Snabbt</h3>
-          <p>Kom igång på minuter — inte dagar.</p>
-        </div>
-      </div>
-    </div>
-
-    <footer>© <span id="y"></span> SellDirekt.se</footer>
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
