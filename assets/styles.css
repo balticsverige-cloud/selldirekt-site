@@ -223,3 +223,25 @@ p, .lead, .muted {
   outline: 2px solid rgba(34,197,94,.55) !important;
   outline-offset: 3px !important;
 }
+/* =========================
+   HOTFIX: Feature strips / “grey boxes”
+   ========================= */
+
+.hero .stat,
+.hero .pill,
+.hero .feature {
+  background: rgba(255,255,255,.07) !important;   /* glass */
+  border: 1px solid rgba(255,255,255,.14) !important;
+  color: rgba(255,255,255,.90) !important;
+}
+
+/* any muted text inside must still be readable */
+.hero .stat *, .hero .pill *, .hero .feature * {
+  opacity: 1 !important;
+  color: rgba(255,255,255,.80) !important;
+}
+
+/* icons in those strips */
+.hero .stat svg, .hero .pill svg, .hero .feature svg {
+  opacity: 1 !important;
+}
