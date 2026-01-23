@@ -119,3 +119,29 @@ h1{margin:12px 0 10px;font-size:44px;line-height:1.05;letter-spacing:-.5px}
   .footerGrid{grid-template-columns:1fr}
   .menu{display:none}
 }
+/* Header */
+.header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 24px;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brandDot{width:10px;height:10px;border-radius:99px;background:rgba(14,165,233,.9)}
+.brandText{font-weight:800;letter-spacing:.2px;color:var(--text)}
+.headerCtas{display:flex;gap:10px;align-items:center}
+@media (max-width: 860px){
+  .menu{display:none}
+  .header{gap:10px}
+}
+
+/* Sections */
+.section{padding:26px 0}
+.section h2{margin:0 0 14px}
+.grid3{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid2{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.pad{padding:16px}
+.tileTitle{font-weight:800}
+.tileText{color:var(--muted);margin-top:6px;line-height:1.55}
+@media (max-width: 860px){
+  .grid3{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+}
